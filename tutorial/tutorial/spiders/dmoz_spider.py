@@ -1,3 +1,4 @@
+import os
 import scrapy
 
 class DmozSpider(scrapy.Spider):
@@ -9,6 +10,11 @@ class DmozSpider(scrapy.Spider):
     ]
 
     def parse(self, response):
+        path = os.path.join('tutorial', 'spiders', 'content')
         filename = response.url.split("/")[-2] + '.html'
-        with open(filename, 'wb') as f:
+
+        if not os.path.exists(path):
+            os.makedirs(path)
+
+        with open(os.path.join(path, filename), 'wb') as f:
             f.write(response.body)
