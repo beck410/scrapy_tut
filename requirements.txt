@@ -28,7 +28,7 @@ python-debian===0.1.21-nmu2ubuntu2
 PyYAML==3.10
 queuelib==1.4.2
 requests==2.2.1
-Scrapy==1.0.5
+Scrapy==2.6.1
 SecretStorage==2.0.0
 service-identity==16.0.0
 simplejson==3.3.1
