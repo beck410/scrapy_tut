@@ -27,7 +27,7 @@ python-apt===0.9.3.5ubuntu2
 python-debian===0.1.21-nmu2ubuntu2
 PyYAML==3.10
 queuelib==1.4.2
-requests==2.2.1
+requests==2.20.0
 Scrapy==1.0.5
 SecretStorage==2.0.0
 service-identity==16.0.0
